@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/isaiaspereira307/gojobs/config"
+	"github.com/isaiaspereira307/gojobs/router"
 )
 
 var (
@@ -16,4 +17,6 @@ func main() {
 		logger.Errorf("Error initializing config: %s", err.Error())
 		return
 	}
+
+	router.Initialize()
 }
